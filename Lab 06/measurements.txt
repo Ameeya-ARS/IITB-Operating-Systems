@@ -1,0 +1,21 @@
+Due to the small number of child processes (2) in the original testcase, the wait times are very small. Hence we increase the number of child processes to 5. With this in mind, the two shedulers give the following times:
+
+Default Scheduler:
+pid | wait time | run time
+ 4  | 1241      | 828
+ 8  | 1246      | 831
+ 5  | 1250      | 839
+ 6  | 1250      | 848
+ 7  | 1249      | 874
+
+We note that the wait times are roughly equal for all the child processes
+
+Lets-get-even Scheduler:
+pid | wait time | run time
+ 4  | 967       | 775
+ 6  | 970       | 777
+ 8  | 972       | 779
+ 5  | 1165      | 766
+ 7  | 1165      | 781
+
+We observe that the odd processes have more waiting time. Morever, on an average and even process would have to wait 2+2+1+1 = 6 ticks to be scheduled again, while an odd process would take 2+2+2+1 = 7 timeslices. The ratios of their average waiting time is empiricially 0.83 which is close to 6/7=0.85
