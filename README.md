@@ -1,4 +1,4 @@
-# CS 333/ CS 347: Operating Systems (Autumn 2022) - IIT Bombay
+# CS 333 / CS 347: Operating Systems (Autumn 2022) - IIT Bombay
 
 This repository contains all my submissions to assignments written during my study of the **CS347 / CS333: Operating Systems Lab** course in Autumn 2022(5th semester) at Indian Institute of Technology Bombay, India.
 
